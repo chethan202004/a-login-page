@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RANDOM-LOGIN-PAGE</title>
+    <style>
+        html{
+            scroll-behavior: smooth;
+        }
+        *{
+            color: red;
+            background-color: black;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin: 0%;
+            box-sizing: border-box;
+            
+        }
+        .outer-box{
+            width: 100vw;
+            height: 100vh;
+        }
+        .inner-box{
+
+            width: 500px;
+            height: 500px;
+            position: relative;
+            margin: auto auto;
+            top: 15%;
+            padding: 40px 40px ;
+            border: 3px solid blue;
+            box-shadow: 5px 5px 200px blue;
+        }
+        .signup-body p{
+           margin: 20px 0;
+        }
+        .signup-body p label{
+           display: block
+        }
+        .signup-body p input{
+            
+            width: 100%;
+            padding: 10px;
+            border: 2px double yellowgreen;
+            border-radius: 5px;
+           cursor: zoom-in;
+           font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+           box-shadow: 5px 5px 10px blue;
+        }
+        #submit-box{
+            box-shadow: 3px 3px 50px yellow;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: large;
+            color: rgb(0, 0, 0);
+            width: 50%;
+            background-color: rgb(255, 255, 255);
+            cursor: pointer;
+            
+        }
+        #reset-box{
+            position: relative;
+            display: inline;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: large;
+            color: rgb(0, 0, 0);
+            width: 50%;
+            background-color: rgb(255, 255, 255);
+            cursor: pointer;
+            
+        }
+        #heading-text{
+            text-shadow: 3px 3px 2px brown;
+            border: 3px double blue;
+            display: inline;
+            box-shadow: 5px 5px 10px blue;
+        }
+        
+
+
+
+    </style>
+</head>
+<body>
+    <div class="outer-box">
+        
+        <div class="inner-box" style="font-size: large;">
+            <main class="signup-body">
+            <form action="#">
+                <h1 style="color: aqua;" id="heading-text">SIGN-UP PAGE</h1>
+                <h3 style="color: blanchedalmond;padding-top:3px">just takes few steps</h3>
+                <p>
+                    <label for="full-name">FULL NAME</label>
+                    <input type="text" name="name" id="name-box" placeholder="CHETHAN" required>
+                </p>
+                <p>
+                    <label for="full-name">MAIL</label>
+                    <input type="text" name="mail" id="mail-box" placeholder="EX-abc@gmail.com" required>
+                </p>
+                <p>
+                    <label for="full-name">PASSWORD</label>
+                    <input type="password" name="password" id="password-box" placeholder="at least 8 character" maxlength="8" required>
+                </p>
+                <p style="display: inline;">
+                    <input type="submit" name="submit-button" id="submit-box" value="SUBMIT" required>
+                </p>
+                  
+            </form>
+        </main>
+        </div>
+      
+    </div>
+</body>
+</html>
